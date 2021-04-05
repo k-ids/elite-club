@@ -20,6 +20,7 @@ return [
          'site_config'    => 'Site Config',
          'twilio'         => 'Twilio Settings',
          'memebershipPlan' => 'Memebership Plan',
+         'artisan'        => 'Artisan Command'
      ],
 
     'email_template' => [
@@ -40,6 +41,11 @@ return [
      'plan'        => [
         'create'   =>  'Create Plan',
         'edit'     =>  'Edit Plan'
+     ],
+     
+     'dev-console'        => [
+        'create'   =>  'Add Command',
+        'edit'     =>  'Edit Command'
      ],
 
     'third_party' => [

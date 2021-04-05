@@ -107,8 +107,23 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-header">
+             {{ trans('general.sidebar.label.dev-console') }}
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="{{ route('developer-console.index') }}" class="nav-link {{ Route::currentRouteName() == 'developer-console.index' ? 'active' : '' }} || {{ Route::currentRouteName() == 'developer-console.create' ? 'active' : '' }} || {{ Route::currentRouteName() == 'developer-console.edit' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-desktop"></i>
+              <p>
+                 Artisan
+                <i class="fas {{ Route::currentRouteName() == 'developer-console.index' ? 'fa-angle-right' : 'fa-angle-left' }} right"></i>
+              </p>
+            </a>
+          </li>
         
         </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>

@@ -16,12 +16,14 @@ return [
              
          'label'    =>  [
             'template' => 'FRONTEND SETTINGS',
+            'dev-console' => 'DEVELOPER CONSOLE'
          ],
 
          'main_menu' => [
               'template' => 'Templates',
               'settings' => 'Third Party Settings',
-              'pages'    => 'Pages'
+              'pages'    => 'Pages',
+              'dev-console' => 'Developer Console'
          ],
 
          'sub_menu' => [
@@ -57,6 +59,10 @@ return [
     'plan' => [
         'heading' => 'Create Plan',
         
+    ],
+
+    'artisan' => [
+        'heading' => 'Add Artisan Command'
     ],
 
     'heading' => [

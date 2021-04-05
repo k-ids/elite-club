@@ -29,7 +29,9 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 	Route::resource('admin/pages', App\Http\Controllers\Admin\PagesController::class);
 
 	Route::resource('admin/membeship-plan', App\Http\Controllers\Admin\MemberShipPlansController::class);
-
+    
+    Route::resource('admin/developer-console', App\Http\Controllers\Admin\DeveloperConsoleController::class);
+	
 	Route::resource('admin/settings', App\Http\Controllers\Admin\SiteConfigController::class, ['except' => ['show']]);
 });
 
