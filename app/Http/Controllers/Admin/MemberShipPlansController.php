@@ -31,6 +31,7 @@ class MemberShipPlansController extends Controller
     public function index()
     {   
         $plans = MemberShipPlan::all();
+       
         return view('admin.packages.index', compact('plans') );
     }
 

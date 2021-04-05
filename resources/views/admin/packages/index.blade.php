@@ -49,8 +49,8 @@
                         <td>{{ $value->title }}</td>
                         <td>{{ $value->price }}</td>
                         <td>0</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{ !empty($value->status == 1) ? 'Publish' : 'Draft' }}</td>
+                        <td>{{ $value->created_at}}</td>
                         
                         <td class="project-actions text-right">
                            <a class="btn btn-info btn-sm" href="{{ route('membeship-plan.edit', $value->id) }}">

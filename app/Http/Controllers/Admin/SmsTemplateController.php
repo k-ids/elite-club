@@ -30,7 +30,7 @@ class SmsTemplateController extends Controller
      */
     public function index()
     {
-        $templates =  SmsTemplate::paginate(10);
+        $templates =  SmsTemplate::all();
         return view( 'admin.sms-templates.index' , compact('templates'));
     }
 

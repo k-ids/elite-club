@@ -30,7 +30,7 @@ class PagesController extends Controller
      */
     public function index()
     {   
-        $pages = Page::paginate(10);
+        $pages = Page::all();
         return view('admin.pages.index', compact('pages'));
     }
 

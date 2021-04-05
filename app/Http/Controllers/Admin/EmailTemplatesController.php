@@ -29,7 +29,7 @@ class EmailTemplatesController extends Controller
      */
     public function index()
     {
-        $templates =  EmailTemplate::paginate(10);
+        $templates =  EmailTemplate::all();
         return view( 'admin.email-templates.index' , compact('templates'));
     }
 
