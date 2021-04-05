@@ -54,6 +54,11 @@ return [
         
     ],
 
+    'plan' => [
+        'heading' => 'Create Plan',
+        
+    ],
+
     'heading' => [
             'twilio' => 'Twilio Settings'
     ],

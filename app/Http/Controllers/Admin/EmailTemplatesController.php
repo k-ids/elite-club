@@ -88,7 +88,7 @@ class EmailTemplatesController extends Controller
     {   
         if(config('app.dev_mode') == false) 
             return back()->with('warning', trans('messages.dev_restriction'));
-  
+        
         return view( 'admin.email-templates.edit', compact('emailTemplate'));
     }
 

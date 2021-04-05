@@ -83,7 +83,7 @@ class RegisterController extends Controller
 
         if(!empty($twilio->is_enable)) {
             $template = SmsTemplate::find(1);
-            $message_body = str_replace(array('{{username}}', '{{email}}', '{{system Name}}'), array($data['name'], $data['email'], 'Laravel Demo Team'), strip_tags($template->template));
+            $message_body = str_replace(array('{{username}}', '{{email}}', '{{system Name}}'), array($data['name'], $data['email'], config('app.name', 'Laravel')), strip_tags($template->template));
             $this->sendSms($data['phone'], $message_body);
         }
         

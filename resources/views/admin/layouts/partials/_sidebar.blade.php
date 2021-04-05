@@ -32,6 +32,16 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item has-treeview">
+            <a href="{{ route('membeship-plan.index') }}" class="nav-link {{ Route::currentRouteName() == 'membeship-plan.index' ? 'active' : '' }} || {{ Route::currentRouteName() == 'membeship-plan.create' ? 'active' : '' }} || {{ Route::currentRouteName() == 'membeship-plan.edit' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-paper-plane"></i>
+              <p>
+                Membership Plans
+                <i class="fas {{ Route::currentRouteName() == 'admin.dashboard' ? 'fa-angle-right' : 'fa-angle-left' }} right"></i>
+              </p>
+            </a>
+          </li>
          
           <li class="nav-header">
              {{ trans('general.sidebar.label.template') }}

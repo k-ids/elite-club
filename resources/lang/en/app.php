@@ -19,6 +19,7 @@ return [
          'page'           => 'Page',
          'site_config'    => 'Site Config',
          'twilio'         => 'Twilio Settings',
+         'memebershipPlan' => 'Memebership Plan',
      ],
 
     'email_template' => [
@@ -34,6 +35,11 @@ return [
      'page'        => [
         'create'   =>  'Create Page',
         'edit'     =>  'Edit Page'
+     ],
+
+     'plan'        => [
+        'create'   =>  'Create Plan',
+        'edit'     =>  'Edit Plan'
      ],
 
     'third_party' => [

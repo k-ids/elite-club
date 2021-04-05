@@ -14,9 +14,9 @@
 
 Route::group(['middleware' => ['auth', 'verified']], function() {
  
-	  Route::get('/admin/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
+	Route::get('/admin/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
 
-	  Route::resource('admin/email-templates', App\Http\Controllers\Admin\EmailTemplatesController::class, ['except' => ['show']]);
+	Route::resource('admin/email-templates', App\Http\Controllers\Admin\EmailTemplatesController::class, ['except' => ['show']]);
 
 	Route::resource('admin/sms-templates', App\Http\Controllers\Admin\SmsTemplateController::class, ['except' => ['show']]);
 
@@ -27,6 +27,8 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 	Route::post('/admin/settings/twilio/update/{id}', [App\Http\Controllers\Admin\TwilioSettingController::class, 'update'])->name('admim.twilio.update');
 
 	Route::resource('admin/pages', App\Http\Controllers\Admin\PagesController::class);
+
+	Route::resource('admin/membeship-plan', App\Http\Controllers\Admin\MemberShipPlansController::class);
 
 	Route::resource('admin/settings', App\Http\Controllers\Admin\SiteConfigController::class, ['except' => ['show']]);
 });
